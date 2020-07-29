@@ -1,0 +1,188 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Open Sans";
+	panose-1:2 11 6 6 3 5 4 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ES link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0cm;margin-bottom:
+15.0pt;margin-left:0cm;line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Arial",sans-serif;color:black'>Segmentación de Clientes</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=es>Conjunto de
+datos:</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>Utilizando un archivo “customer-data.csv”
+que es un data de prueba de clientes de pedidos de alimentos  que contiene  10.000
+registros, similar a HUGO o UBER Eats, se registra un ID. el primer pedido
+realizado, el más reciente,  la cantidad  gastada  por los clientes y  el
+número  de  pedidos.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=es>Declaración del
+problema:</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>**Este servicio de entregas** 
+(Super Mercado, Restaurante, cualquier servicio de entregas, propio o
+subcontratado)  se enfrenta a  un  problema  en la retención de  sus  clientes. 
+Mi propuesta es por medio de  algoritmos de herramientas de análisis y
+aprendizaje  automático, plantear la solución. Este  problema  debe  ser  de 
+gran  interés  para  cualquier  organización  que  trabaje  con servicio  al
+cliente  Podemos  dividir el  problema  en  dos  partes:</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Los  clientes  que no 
+están  contribuyendo  a los   ingresos  (clientes de bajo  rendimiento)  
+necesitan  ser  identificados  y  segregados  de  los  clientes  que  generan 
+una  gran cantidad de ingresos  (clientes de  alto  rendimiento)   para  la 
+organización..</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- La  identificación de estos
+segmentos de  clientes debe  basarse en  ciertos indicadores clave de
+rendimiento,   que  también  deben  ser  reconocidos  a  partir  del conjunto
+de datos  dado..</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>• Metodología:</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>He utilizado Python para realizar
+el análisis en este proyecto.  Cualquier consulta estoy a la orden en el correo
+<a href="mailto:mausantiagof@gmail.com"><span style='color:#888888;text-decoration:
+none'>mausantiagof@gmail.com</span></a> o al Cel +502 3590-9717.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>Los pasos que he seguido son:</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Exploración y validación de
+datos (realización de comprobaciones de integridad de datos, identificación de valores
+que faltan, etc.)   </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Preprocesamiento de datos
+(Manejo de valores faltantes, estandarización, comprobación  de correlación, hipótesis
+de prueba)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Análisis de Pareto (Para determinar
+qué porcentaje del cliente contribuye  y cuál es el porcentaje  de  los  ingresos))</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Determinación de  los
+indicadores clave de rendimiento .</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Determinación del número de
+clusters a través de Análisis de Elbow.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- K-Means clustering, para segmentación
+de clientes.  </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- PCA para una  mejor 
+visualización..</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Información agregada para cada
+clúster.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>• Resultados  y 
+Conclusiones::</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- En primer lugar, como se
+sospecha,  uno de los clústeres de  clientes    realmente  supera a todos los 
+demás clústeres y  los  clientes    en  ese  clúster  es  realmente  nuestro 
+cliente más  valioso.  La  empresa  debe  tratar  de  protegerlos    y  mantenerse
+intacto.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>-  Por otro lado, el clúster número
+4 es el clúster de menor rendimiento. Los clientes de este clúster no han pedido
+desde hace mucho tiempo y tienden a no gastar mucho también. La empresa puede ponerse
+en contacto con estos clientes para obtener sus comentarios y diseñar campañas de
+marketing especiales para recuperar su negocio.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Parece que no hay diferencia
+entre los clústeres en la distancia media del restaurante y el tiempo medio de entrega.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>- Los indicadores clave de rendimiento
+seleccionados, 'o de pedidos' (frecuencia), 'Cantidad' (Monetaria) y últimas
+Compras (Recency) son en realidad estadísticamente diferentes en cada clúster y
+siguen siendo clave para segmentar clientes en diferentes clústeres.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>• Presentación:</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>Dado que se  trata  de una 
+propuesta empresarial, la  comunicación de los  resultados  de  este  análisis
+sigue siendo  uno  de  los pasos más  importantes para mí,  no  sólo  en  este 
+proyecto  sino  en  cualquier  otro  proyecto de análisis de datos. .  </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.5pt;
+font-family:"Open Sans",sans-serif;color:#888888'>El  documento  denominado 
+**' Segmentación del cliente -Presentation.pdf'**  contiene  presentaciones 
+intuitivas  con  visualizaciones  y  proporciona recomendaciones comprensibles 
+a  las  partes interesadas..  </span></p>
+
+</div>
+
+</body>
+
+</html>
