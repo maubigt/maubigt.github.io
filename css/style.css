@@ -290,7 +290,7 @@ header .vertical-menu li a:hover {
 }
 header .vertical-menu li a.active:before {
   content: "";
-  background: #FF5959;
+  background: #d72200;
   display: block;
   height: 18px;
   left: -30px;
@@ -1693,3 +1693,4 @@ section.padding-60 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
